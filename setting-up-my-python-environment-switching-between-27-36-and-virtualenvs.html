@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="./theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="./theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://anomam.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Marc Anoma's Notes Atom">
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+
+<meta name="author" content="Marc Anoma" />
+<meta name="description" content="I am really excited to share this blog post from Henrique Bastos on using pyenv and virtualenvwrapper in order to set up an amazing and flexible Python environment. This is exactly what I was looking for in order to decrease my reliance on 2.7 and to finally switch to …" />
+<meta name="keywords" content="python">
+<meta property="og:site_name" content="Marc Anoma's Notes"/>
+<meta property="og:title" content="Setting up my Python environment: switching between 2.7, 3.6, and virtualenvs"/>
+<meta property="og:description" content="I am really excited to share this blog post from Henrique Bastos on using pyenv and virtualenvwrapper in order to set up an amazing and flexible Python environment. This is exactly what I was looking for in order to decrease my reliance on 2.7 and to finally switch to …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="./setting-up-my-python-environment-switching-between-27-36-and-virtualenvs.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-04-08 02:45:00+09:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="./author/marc-anoma.html">
+<meta property="article:section" content="Python"/>
+<meta property="article:tag" content="python"/>
+<meta property="og:image" content="/images/profile.png">
+
+  <title>Marc Anoma's Notes &ndash; Setting up my Python environment: switching between 2.7, 3.6, and virtualenvs</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href=".">
+        <img src="/images/profile.png" alt="Marc Anoma" title="Marc Anoma">
+      </a>
+      <h1><a href=".">Marc Anoma</a></h1>
+
+<p>Data Science and Renewable Energy enthusiast</p>
+      <nav>
+        <ul class="list">
+          <li><a href="./pages/about.html#about">About</a></li>
+          <li><a href="./pages/contact.html#contact">Contact</a></li>
+
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-twitter" href="https://twitter.com/anomamarc" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/marc-anoma-20b74940/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/anomam" target="_blank"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href=".">    Home
+</a>
+
+      <a href="/archives.html">ARCHIVES</a>
+
+      <a href="https://anomam.github.io/feeds/all.atom.xml">    Atom
+</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+    <h1 id="setting-up-my-python-environment-switching-between-27-36-and-virtualenvs">Setting up my Python environment: switching between 2.7, 3.6, and virtualenvs</h1>
+    <p>
+          Posted on Sun 08 April 2018 in <a href="./category/python.html">Python</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>I am really excited to share this blog <a href="https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-workspace-628d68552e14">post</a>
+from <a href="https://twitter.com/henriquebastos">Henrique Bastos</a> on using <code>pyenv</code> and <code>virtualenvwrapper</code>
+in order to set up an amazing and flexible Python environment.</p>
+<p>This is exactly what I was looking for in order to  decrease my reliance on 2.7 and to finally switch
+to Python 3!</p>
+<p>I encountered only one little issue  when I tried to import <code>matplotlib</code> in a
+notebook in Jupyter, within a Python 2 virtual environment. And I was able to solve it with the following steps:</p>
+<ul>
+<li>I installed <code>ipykernel</code> in my Python 2 virtual environment using the usual method:</li>
+</ul>
+<div class="highlight"><pre><span></span>pip install ipykernel
+</pre></div>
+
+
+<ul>
+<li>I then installed the kernel for <code>jupyter</code> while giving it a name that would help me recognize it, like <code>py2_my_environment</code>:</li>
+</ul>
+<div class="highlight"><pre><span></span>python -m ipykernel install --user --name py2_my_environment
+</pre></div>
+
+
+<p>After opening Jupyter, and then starting a new notebook using the Kernel named <code>py2_my_environment</code>, I am
+now able to import <code>matplotlib</code> without any problem!</p>
+<p>I hope this is helpful to others that followed the same post to set up their Python environment :)</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="./tag/python.html">python</a>
+    </p>
+  </div>
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy; Marc Anoma 2018</p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Marc Anoma's Notes ",
+  "url" : ".",
+  "image": "/images/profile.png",
+  "description": "Marc Anoma's Thoughts and Writings"
+}
+</script>
+</body>
+</html>

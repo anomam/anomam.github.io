@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Marc Anoma's Notes</title><link href="https://anomam.github.io/" rel="alternate"></link><link href="https://anomam.github.io/feeds/all.atom.xml" rel="self"></link><id>https://anomam.github.io/</id><updated>2018-04-08T02:45:00+09:00</updated><subtitle>Data Science and Renewable Energy enthusiast</subtitle><entry><title>Setting up my Python environment: switching between 2.7, 3.6, and virtualenvs</title><link href="https://anomam.github.io/setting-up-my-python-environment-switching-between-27-36-and-virtualenvs.html" rel="alternate"></link><published>2018-04-08T02:45:00+09:00</published><updated>2018-04-08T02:45:00+09:00</updated><author><name>Marc Anoma</name></author><id>tag:anomam.github.io,2018-04-08:/setting-up-my-python-environment-switching-between-27-36-and-virtualenvs.html</id><summary type="html">&lt;p&gt;I am really excited to share this blog &lt;a href="https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-workspace-628d68552e14"&gt;post&lt;/a&gt;
+from &lt;a href="https://twitter.com/henriquebastos"&gt;Henrique Bastos&lt;/a&gt; on using &lt;code&gt;pyenv&lt;/code&gt; and &lt;code&gt;virtualenvwrapper&lt;/code&gt;
+in order to set up an amazing and flexible Python environment.&lt;/p&gt;
+&lt;p&gt;This is exactly what I was looking for in order to  decrease my reliance on 2.7 and to finally switch
+to …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I am really excited to share this blog &lt;a href="https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-workspace-628d68552e14"&gt;post&lt;/a&gt;
+from &lt;a href="https://twitter.com/henriquebastos"&gt;Henrique Bastos&lt;/a&gt; on using &lt;code&gt;pyenv&lt;/code&gt; and &lt;code&gt;virtualenvwrapper&lt;/code&gt;
+in order to set up an amazing and flexible Python environment.&lt;/p&gt;
+&lt;p&gt;This is exactly what I was looking for in order to  decrease my reliance on 2.7 and to finally switch
+to Python 3!&lt;/p&gt;
+&lt;p&gt;I encountered only one little issue  when I tried to import &lt;code&gt;matplotlib&lt;/code&gt; in a
+notebook in Jupyter, within a Python 2 virtual environment. And I was able to solve it with the following steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I installed &lt;code&gt;ipykernel&lt;/code&gt; in my Python 2 virtual environment using the usual method:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install ipykernel
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;I then installed the kernel for &lt;code&gt;jupyter&lt;/code&gt; while giving it a name that would help me recognize it, like &lt;code&gt;py2_my_environment&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python -m ipykernel install --user --name py2_my_environment
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After opening Jupyter, and then starting a new notebook using the Kernel named &lt;code&gt;py2_my_environment&lt;/code&gt;, I am
+now able to import &lt;code&gt;matplotlib&lt;/code&gt; without any problem!&lt;/p&gt;
+&lt;p&gt;I hope this is helpful to others that followed the same post to set up their Python environment :)&lt;/p&gt;</content><category term="python"></category></entry></feed>
