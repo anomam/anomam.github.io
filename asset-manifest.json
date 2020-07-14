@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.4d4e1511.chunk.js",
-    "main.js.map": "/static/js/main.4d4e1511.chunk.js.map",
+    "main.js": "/static/js/main.ba1d6055.chunk.js",
+    "main.js.map": "/static/js/main.ba1d6055.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d5eae445.js",
     "runtime-main.js.map": "/static/js/runtime-main.d5eae445.js.map",
     "static/js/2.c8c82291.chunk.js": "/static/js/2.c8c82291.chunk.js",
     "static/js/2.c8c82291.chunk.js.map": "/static/js/2.c8c82291.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.309d3ec9641f61d31cb2d84492d2d897.js": "/precache-manifest.309d3ec9641f61d31cb2d84492d2d897.js",
+    "precache-manifest.550f72ccde36cbcd160224cb7a9b9940.js": "/precache-manifest.550f72ccde36cbcd160224cb7a9b9940.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.c8c82291.chunk.js.LICENSE.txt": "/static/js/2.c8c82291.chunk.js.LICENSE.txt",
     "static/media/Paris_map.png": "/static/media/Paris_map.5c4ba849.png",
@@ -19,6 +19,6 @@
   "entrypoints": [
     "static/js/runtime-main.d5eae445.js",
     "static/js/2.c8c82291.chunk.js",
-    "static/js/main.4d4e1511.chunk.js"
+    "static/js/main.ba1d6055.chunk.js"
   ]
 }
