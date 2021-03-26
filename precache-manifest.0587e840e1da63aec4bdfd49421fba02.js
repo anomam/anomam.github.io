@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "674fb7d6a271ae1125c5324083d01855",
+    "revision": "adc0874960f9ad3a3843931dc117d3d1",
     "url": "/index.html"
   },
   {
-    "revision": "26f77f54c58b9121b4a1",
+    "revision": "297c7442ef558ac64676",
     "url": "/static/css/2.68e19f7c.chunk.css"
   },
   {
-    "revision": "26f77f54c58b9121b4a1",
-    "url": "/static/js/2.7eab89df.chunk.js"
+    "revision": "297c7442ef558ac64676",
+    "url": "/static/js/2.861b3f58.chunk.js"
   },
   {
     "revision": "89b0379e7bcda1a468d8b0343aeb4e53",
-    "url": "/static/js/2.7eab89df.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.861b3f58.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e17a1de84201885e231d",
-    "url": "/static/js/main.24377007.chunk.js"
+    "revision": "31d5c1b2aa668e9db998",
+    "url": "/static/js/main.5330f457.chunk.js"
   },
   {
     "revision": "65b48e0240a65107eed9",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d3f0bb4a6220b1fbfdc26b7fac329b90",
     "url": "/static/media/eltorobravo.d3f0bb4a.jpg"
+  },
+  {
+    "revision": "938be1e44d6ebb7772b5e55809f99b10",
+    "url": "/static/media/handwriting.938be1e4.png"
   },
   {
     "revision": "69cdb4d499bf288fa05b63f16d8f8909",
